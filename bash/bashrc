@@ -113,9 +113,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export VISUAL=vim
+export EDITOR="$VISUAL"
 alias gitc='git commit'
 alias gitd='git diff'
 alias gitl='git log'
 alias gits='git status'
 
+alias python='python3'
 alias hide_the_bodies='docker ps -a | grep Exited | awk "{print $1}" | xargs docker rm'
