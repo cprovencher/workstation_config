@@ -113,6 +113,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Git related settings
 export VISUAL=vim
 export EDITOR="$VISUAL"
 alias gitc='git commit'
@@ -120,5 +121,11 @@ alias gitd='git diff'
 alias gitl='git log'
 alias gits='git status'
 
+# Python dev settings
 alias python='python3'
-alias hide_the_bodies='docker ps -a | grep Exited | awk "{print $1}" | xargs docker rm'
+alias pip='pip3'
+alias make_env='virtualenv -p /usr/bin/python3.4 --always-copy'
+
+# Docker shortcuts
+alias hide_the_bodies="docker ps -a | grep Exited | awk '{print \$1}' | xargs docker rm"
+
