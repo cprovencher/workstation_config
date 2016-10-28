@@ -1,0 +1,15 @@
+[user]
+	email = michael.ellenburg@mesosphere.io
+	name = Michael Ellenburg
+[credential]
+	helper = cache
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    di = diff
+    dic = diff --cached
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    copr = "!f() { git fetch origin pull/$1/head:pr$1; }; f"
+    trainadd = "!f() { git copr $1; git merge --no-ff pr$1 -m \"Merge #$1\"; git br -D pr$1; }; f"
