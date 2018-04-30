@@ -1,6 +1,7 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 syntax on
+:imap jk <Esc>
 autocmd BufWritePre * :%s/\s\+$//e
 filetype plugin indent on
 " show existing tab with 4 spaces width
