@@ -127,5 +127,5 @@ alias pip='pip3'
 alias make_env='virtualenv -p /usr/bin/python3.4 --always-copy'
 
 # Docker shortcuts
-alias hide_the_bodies="docker ps -a | grep Exited | awk '{print \$1}' | xargs docker rm"
+alias hide_the_bodies="docker system prune -f"
 
